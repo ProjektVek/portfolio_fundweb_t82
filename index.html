@@ -8,23 +8,33 @@
   <meta name="keywords" content="portfólio, desenvolvimento web, front-end, back-end, fullstack, JavaScript, HTML, CSS, desenvolvedor, Victor Hugo">
   <link rel="icon" href="./assets/img/favicon.svg">
   <title>Portfólio - Victor Hugo</title>
+
+  <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
 
   <!-- Cabeçalho da página -->
-  <header>
-    <div id="header_content">
+  <header class="flex menu_container">
+    <div id="header_content" class="menu_content">
       <!-- Título do Cabeçalho -->
        <div id="título">
         <a href="#">Universo</a>
        </div>
 
        <!-- Menu -->
-        <div id="menu">
+        <div id="menu" class="flex">
 
           <!-- Barra de Navegação -->
            <nav>
-              <ul>
+              <ul class="menu_list flex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contatos</a></li>
@@ -38,50 +48,57 @@
    <main>
 
      <!-- Seção Home -->
-     <section id="home">
-              <article id="home_texto">
+     <section id="home" class="flex home_container">
+        <article id="home_texto" class="flex home_content">
           <h4>Bem-vindo ao Novo Universo</h4>
           <h1>Texto</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cumque reprehenderit nihil. Quidem quasi blanditiis quia. Voluptatem id, quasi, recusandae pariatur molestias enim sequi rerum saepe, aspernatur ab consequatur laborum.</p>
-          <a href="https://github.com/ProjektVek" target="_blank">Explorar</a>
+          <a href="https://github.com/ProjektVek" target="_blank" class="botao">Explorar</a>
         </article>
-        <article id="home_imagem">
+        <article id="home_imagem" class="flex home_content">
           <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação">
         </article>
      </section>
 
      <!-- Seção Sobre -->
-     <section id="about">
-      <img src="./assets/img/user_01.svg" alt="Foto do perfil do github">
+        <!-- Seção Sobre -->
+        <section id="about" class="flex sobre_container">
 
-      <article id="about_texto">
-        <h1>Sobre mim</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolores. Quos ea expedita nesciunt similique optio tempore maxime! Sequi, quasi? Veritatis fugiat consectetur eum deleniti quo libero voluptas ipsam magnam?</p>
-      
-        <div id="about_github">
-          <a href="https://github.com/ProjektVek" target="_blank">GitHub</a>
-          <p>200 seguidores</p>
-          <p>20 repositórios</p>
-        </div>
-      </article>
-     </section>
+            <!-- Imagem da seção Sobre -->
+            <img src="./assets/img/user_01.svg" alt="Foto do perfil do Github" />
+
+            <!-- Texto da seção Sobre -->
+            <article id="about_texto">
+                <h1>Sobre mim</h1>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
+                    na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
+                    bebadis, arcu quam euismod magna.</p>
+
+                <div id="about_github" class="flex sobre_github">
+                    <a href="https://github.com/rafaelq80" target="_blank" class="botao">Github</a>
+                    <p>200 seguidores</p>
+                    <p>20 repositórios</p>
+                </div>
+            </article>
+
+        </section>
 
      <!-- Seção Contatos -->
-     <section id="contact">
+     <section id="contact" class="contato_container">
       <h4>Contate-me</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloremque.</p>
 
-      <div id="icones_redes_sociais">
+      <div id="icones_redes_sociais" class="social_container">
         <a href="" target="_blank">
-          <img src="./assets/img/linkedin.svg" alt="Icone do Linkedin">
+          <img src="./assets/img/linkedin.svg" alt="Icone do Linkedin" class="social_icon">
         </a>
 
         <a href="" target="_blank">
-          <img src="./assets/img/github.svg" alt="Icone do Github">
+          <img src="./assets/img/github.svg" alt="Icone do Github" class="social_icon">
         </a>
 
         <a href="" target="_blank">
-          <img src="./assets/img/instagram.svg" alt="Icone do Instagram">
+          <img src="./assets/img/instagram.svg" alt="Icone do Instagram" class="social_icon">
         </a>
       </div>
 
@@ -121,7 +138,7 @@
         >
         </textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="botao">Enviar</button>
       </form>
 
      </section>
